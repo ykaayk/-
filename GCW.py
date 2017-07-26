@@ -300,7 +300,7 @@ class GCW(object):
             # print len(a)
             self.chu_shi_hua(year, month)
         # 时间差超过一个月则初始化
-        elif str(year) != a[0].strip() or str(month) != a[1].strip():
+        elif str(year) != a[0].strip()[3:] or str(month) != a[1].strip():
             self.chu_shi_hua(year, month)
         # 文件即不为空、时间不超过一个月，则无需初始化
         else:
